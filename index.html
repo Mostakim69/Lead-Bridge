@@ -1,23 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LeadsBridge</title>
-</head>
-<body>
-    <!-- header section -->
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> LeadsBridge </title>
+<!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 7.72418C17.4841 8.79858 18.9932 10.0823 20.4555 11.5445C21.9177 13.0067 23.2015 14.5159 24.2759 16.0001M16 7.72418C14.5159 8.79858 13.0068 10.0823 11.5446 11.5445C10.0823 13.0068 8.7986 14.5159 7.72418 16.0001M16 7.72418C20.7599 4.27838 25.2629 2.98544 27.1388 4.86125C29.0145 6.73708 27.7216 11.2402 24.2759 16.0001M24.2759 16.0001C27.7216 20.7599 29.0144 25.2629 27.1387 27.1388C25.7479 28.5295 22.9131 28.1784 19.6 26.4996M24.2759 16.0001C23.2015 17.4843 21.9177 18.9933 20.4556 20.4555C18.9933 21.9177 17.4841 23.2015 16 24.2759M7.72418 16.0001C8.79857 17.4843 10.0823 18.9933 11.5445 20.4555C13.0067 21.9177 14.5159 23.2015 16 24.2759M7.72418 16.0001C4.27846 20.7599 2.98556 25.2629 4.86136 27.1388C6.73716 29.0145 11.2402 27.7216 16 24.2759M7.72418 16.0001C4.27837 11.2402 2.98542 6.73706 4.86124 4.86124C6.252 3.47048 9.08694 3.82159 12.4 5.5005" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M16 18.6667C17.4728 18.6667 18.6667 17.4728 18.6667 16C18.6667 14.5272 17.4728 13.3333 16 13.3333C14.5272 13.3333 13.3333 14.5272 13.3333 16C13.3333 17.4728 14.5272 18.6667 16 18.6667Z" stroke="#FFA500" stroke-width="2.5" />
+        </svg>
+      </div>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link active">Services</a></li>
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn--nav">Book a Free Consultation</a>
+      </div>
+    </nav>
 
-    </header>
-    <!-- main section -->
-    <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="float-card float-card--chart" id="cardChart">
+        <p class="float-card__title">Total Incomes</p>
+        <div class="chart-bars">
+          <div class="bar" style="height: 40%"></div>
+          <div class="bar" style="height: 55%"></div>
+          <div class="bar" style="height: 30%"></div>
+          <div class="bar bar--active" style="height: 85%"></div>
+          <div class="bar" style="height: 60%"></div>
+          <div class="bar" style="height: 45%"></div>
+        </div>
+        <div class="chart-labels">
+          <span>Feb</span><span>Mar</span><span>Apr</span><span>May</span
+          ><span>Jun</span><span>Jul</span>
+        </div>
+      </div>
 
-    </main>
+      <div class="hero__badge">
+        <span class="badge__icon">
+          <img class="badge__icon_image" src="./assets/image 6.png" alt="" />
+        </span>
+        <span class="badge__text" >Your Full-Service <strong>Amazon Partner</strong></span>
+      </div>
 
-    <!-- footer section -->
-     <footer>
-        
-     </footer>
-</body>
+      <h1 class="hero__headline"> Turn Your Amazon Struggles <br /> into Success—Save Time,<br />
+        <span class="hero__highlight">Maximize Profits!</span>
+      </h1>
+
+      <a href="#" class="btn btn--hero">Book a Free Consultation</a>
+
+      <div class="float-card float-card--users" id="cardUsers">
+        <div class="users-avatars">
+          <img class="avatar" src="https://i.pravatar.cc/32?img=1" alt="user" />
+          <img class="avatar" src="https://i.pravatar.cc/32?img=2" alt="user" />
+          <img class="avatar" src="https://i.pravatar.cc/32?img=3" alt="user" />
+          <img class="avatar" src="https://i.pravatar.cc/32?img=4" alt="user" />
+        </div>
+        <div class="users-info">
+          <p class="users-count">45k+ Users</p>
+          <p class="users-rating">&#11088; 4.7 Rating</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+      <p class="stats__heading">Amazon Market Statistics Worldwide 2024</p>
+      <div class="stats__grid">
+        <div class="stat-card">
+          <h3 class="stat-card__number" data-target="600" data-prefix="" data-suffix=" million" >  0 million </h3>
+          <p class="stat-card__label">Amazon Offers Over Products</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-card__number" data-target="638" data-prefix="$" data-suffix=".0 billion" > $0.0 billion </h3>
+          <p class="stat-card__label">Amazon Global Net Sales Revenue</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-card__number" data-target="1195" data-prefix="" data-suffix=" million" data-display="11.95"> 0 million </h3>
+          <p class="stat-card__label">Amazon Handles Orders Daily.</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-card__number" data-target="16" data-prefix="$" data-suffix=" billion" data-display="1.6" > $0 billion </h3>
+          <p class="stat-card__label">Amazon Average Daily Sales Revenue</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="story">
+      <div class="story__badge">
+        <span class="badge__icon">
+          <img class="badge__icon_image" src="./assets/image 6.png" alt="" />
+        </span>
+        <span class="story__badge-text">Our <strong>Story</strong></span>
+      </div>
+
+      <h2 class="story__headline">
+        Struggling With Amazon Sales? Let's Scale Your<br />
+        Business&#8212;<span class="story__highlight">Faster, Smarter,</span>
+        &amp; Stress-Free!
+      </h2>
+
+      <p class="story__body">
+        Amazon is complex, but success doesn't have to be. At
+        <span class="story__brand">FINTRIXX</span>, we help sellers increase
+        sales, optimize ads, rank higher, and expand into new markets
+        &#8212;without wasting time or money. &#127919; Let's turn your
+        struggles into scalable success!
+      </p>
+
+      <a href="#" class="btn btn--story">Book a Free Strategy Call</a>
+    </section>
+
+    <!-- Why chooose section -->
+    <section class="why">
+      <div class="why__left">
+        <div class="why__badge">
+          <span class="badge__icon">
+            <img class="badge__icon_image" src="./assets/image 6.png" alt="" />
+          </span>
+          <span class="why__badge-text">Why <strong>Choose Us</strong></span>
+        </div>
+        <h2 class="why__headline">
+          Why Choose <span class="why__brand">FINTRIXX?</span>
+        </h2>
+        <p class="why__body">
+          Amazon is tough&mdash;we make it easy. At FINTRIXX, we help sellers
+          rank higher, scale faster, &amp; sell smarter. We analyze trends,
+          optimize ads, manage inventory, &amp; protect your account so you can
+          focus on your business.<br />
+          &#128640; No more guesswork. No more wasted money. Just real results.
+        </p>
+        <a href="#" class="btn btn--why">Book a Free Consultation</a>
+      </div>
+
+      <div class="why__right">
+        <div class="why__atom-container">
+          <div class="atom-yellow-bg"></div>
+          <div class="why__atom-wrap">
+            <svg class="why__atom-svg" width="200" height="200" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" >
+              <path d="M16 7.72418C17.4841 8.79858 18.9932 10.0823 20.4555 11.5445C21.9177 13.0067 23.2015 14.5159 24.2759 16.0001M16 7.72418C14.5159 8.79858 13.0068 10.0823 11.5446 11.5445C10.0823 13.0068 8.7986 14.5159 7.72418 16.0001M16 7.72418C20.7599 4.27838 25.2629 2.98544 27.1388 4.86125C29.0145 6.73708 27.7216 11.2402 24.2759 16.0001M24.2759 16.0001C27.7216 20.7599 29.0144 25.2629 27.1387 27.1388C25.7479 28.5295 22.9131 28.1784 19.6 26.4996M24.2759 16.0001C23.2015 17.4843 21.9177 18.9933 20.4556 20.4555C18.9933 21.9177 17.4841 23.2015 16 24.2759M7.72418 16.0001C8.79857 17.4843 10.0823 18.9933 11.5445 20.4555C13.0067 21.9177 14.5159 23.2015 16 24.2759M7.72418 16.0001C4.27846 20.7599 2.98556 25.2629 4.86136 27.1388C6.73716 29.0145 11.2402 27.7216 16 24.2759M7.72418 16.0001C4.27837 11.2402 2.98542 6.73706 4.86124 4.86124C6.252 3.47048 9.08694 3.82159 12.4 5.5005" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M16 18.6667C17.4728 18.6667 18.6667 17.4728 18.6667 16C18.6667 14.5272 17.4728 13.3333 16 13.3333C14.5272 13.3333 13.3333 14.5272 13.3333 16C13.3333 17.4728 14.5272 18.6667 16 18.6667Z" stroke="#FFA500" stroke-width="2.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="why__pills">
+          <div class="why__pills-wrapper">
+            <svg class="why__pills-top" width="185" height="428" viewBox="0 0 185 428" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.3061 422.152C65.6516 428.081 74.5815 429.201 80.9738 424.419C115.417 398.649 142.696 366.385 160.672 330.037C180.579 289.784 188.431 245.825 183.5 202.24C178.569 158.655 161.015 116.856 132.466 80.7204C106.684 48.0876 72.6903 21.0292 33.1238 1.54779C25.8337 -2.04165 17.1074 0.836823 13.0155 7.85725L2.18405 26.4409C-2.6322 34.7042 0.855804 45.2827 9.32327 49.7302C38.4868 65.0481 63.6128 85.6116 82.9589 110.099C105.798 139.007 119.841 172.446 123.786 207.315C127.731 242.183 121.449 277.349 105.524 309.552C92.1555 336.584 72.3547 360.792 47.4969 380.628C39.9037 386.688 38.4951 397.957 44.9997 405.172L60.3061 422.152Z" fill="white" fill-opacity="0.2" />
+            </svg>
+
+            <svg class="why__pills-bottom" width="187" height="399" viewBox="0 0 187 399" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M79.7714 394.514C85.5609 399.979 94.5231 400.392 100.505 395.138C129.033 370.081 151.431 340.23 166.285 307.371C182.941 270.529 189.674 230.878 185.972 191.44C182.269 152.001 168.229 113.815 144.921 79.7905C124.106 49.406 96.3906 23.0564 63.5084 2.31329C56.7176 -1.97055 47.8502 -0.111034 43.0055 6.29171L3.25632 58.8245C-2.5762 66.5329 -0.252136 77.5723 7.66446 83.1188C25.3491 95.5089 40.394 110.552 52.0548 127.574C66.9721 149.35 75.9577 173.789 78.3272 199.03C80.6967 224.271 76.3875 249.647 65.728 273.226C57.4755 291.481 45.5853 308.285 30.6489 322.891C23.6864 329.7 23.1532 341.073 30.235 347.758L79.7714 394.514Z" fill="#FFA500" fill-opacity="0.06" />
+            </svg>
+
+            <div class="why__pill">
+              <span class="pill__icon">&#128640;</span><span>Proven Expertise</span>
+            </div>
+            <div class="why__pill">
+              <span class="pill__icon">&#128640;</span><span>Maximized Visibility</span>
+            </div>
+            <div class="why__pill">
+              <span class="pill__icon">&#128640;</span><span>Strategic Growth</span>
+            </div>
+            <div class="why__pill">
+              <span class="pill__icon">&#128640;</span ><span>Exclusive Partnerships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serbvice section -->
+    <section class="services">
+      <div class="services__header">
+        <div class="services__badge">
+          <span class="badge__icon">
+            <img class="badge__icon_image" src="./assets/image 6.png" alt="" />
+          </span>
+          <span class="services__badge-text" >Our <strong>Services</strong></span >
+        </div>
+        <h2 class="services__headline">
+          Scale Smarter, <span class="services__highlight">Sell Faster</span>
+        </h2>
+        <p class="services__sub">
+          We handle everything Amazon so you can focus on growing.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <h3 class="svc-card__title">Amazon Growth &amp; Advertising</h3>
+            <span class="svc-card__emoji">&#128640;</span>
+          </div>
+          <div class="svc-card__divider"></div>
+          <ul class="svc-card__list">
+            <li>
+              <span class="svc-check">&#10003;</span> Bid &amp; Budget
+              Optimization &ndash; Higher ROI, lower ACOS.
+            </li>
+            <li>
+              <span class="svc-check">&#10003;</span> Monthly PPC Strategy
+              &ndash; Tailored for long-term growth.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <h3 class="svc-card__title">SEO &amp; Product Ranking</h3>
+            <span class="svc-card__emoji">&#128200;</span>
+          </div>
+          <div class="svc-card__divider"></div>
+          <ul class="svc-card__list">
+            <li>
+              <span class="svc-check">&#10003;</span> Organic &amp; Sponsored
+              Ranking &ndash; More visibility, more sales
+            </li>
+            <li>
+              <span class="svc-check">&#10003;</span> Keyword &amp; Competitor
+              Analysis &ndash; Stay ahead of the competition.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <h3 class="svc-card__title">Inventory &amp; Account Management</h3>
+            <span class="svc-card__emoji">&#128230;</span>
+          </div>
+          <div class="svc-card__divider"></div>
+          <ul class="svc-card__list">
+            <li>
+              <span class="svc-check">&#10003;</span> Inventory Forecasting
+              &amp; Restocking &ndash; No stockouts, no overstocking.
+            </li>
+            <li>
+              <span class="svc-check">&#10003;</span> Amazon Account Health
+              &amp; Compliance &ndash; Avoid suspensions &amp; violations.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="svc-card">
+          <div class="svc-card__top">
+            <h3 class="svc-card__title">Scaling &amp; Expansion</h3>
+            <span class="svc-card__emoji">&#127758;</span>
+          </div>
+          <div class="svc-card__divider"></div>
+          <ul class="svc-card__list">
+            <li>
+              <span class="svc-check">&#10003;</span> Launching New Products
+              &ndash; Market research-backed success.
+            </li>
+            <li>
+              <span class="svc-check">&#10003;</span> International Expansion
+              &ndash; Sell beyond borders with ease.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- approch section -->
+    <section class="approach">
+      <div class="approach__left">
+        <div class="approach__img-stack">
+          <div class="approach__img-bg">
+            <!-- Finance chart image placeholder -->
+            <div class="approach__img approach__img--back">
+              <img src="./assets/img middle2.png" alt="" />
+            </div>
+            <!-- Growth laptop image -->
+            <div class="approach__img approach__img--front">
+              <img  src="./assets/img middle.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="approach__right">
+        <h2 class="approach__headline">
+          Our <span class="approach__highlight">Approach</span>
+        </h2>
+
+        <div class="approach__item">
+          <div class="approach__item-header">
+            <span class="approach__item-icon">&#127919;</span>
+            <span class="approach__item-label">Mission</span>
+          </div>
+        </div>
+
+        <div class="approach__item approach__item--active">
+          <div class="approach__item-header">
+            <span class="approach__item-icon">&#127758;</span>
+            <span class="approach__item-label">Vision</span>
+          </div>
+          <p class="approach__item-body">
+            Founded in 1983, SecureWealth was created to address the challenges
+            of traditional banking&mdash;long queues, complicated processes, and
+            limited access. We started with a vision to make banking simple,
+            accessible, and convenient for everyone. Today, we proudly serve 7+
+            million users, helping them manage their finances with ease.
+          </p>
+        </div>
+
+        <a href="#" class="btn btn--approach">Book a Free Strategy Call</a>
+      </div>
+    </section>
+
+    <!-- hash  section -->
+    <section class="reality">
+      <div class="reality__header">
+        <div class="reality__badge">
+          <span class="badge__icon">
+            <img class="badge__icon_image" src="./assets/image 6.png"  alt="" />
+          </span>
+          <span class="reality__badge-text" >Growth <strong>Business</strong></span
+          >
+        </div>
+        <h2 class="reality__headline">
+          The Harsh Reality of<br />Selling on
+          <span class="reality__highlight">Amazon</span>
+        </h2>
+        <p class="reality__sub">
+          Selling on Amazon is tough. Do these struggles sound familiar? Without
+          the<br />right strategy, you're losing money, time, and opportunities.
+        </p>
+      </div>
+
+      <div class="reality__grid">
+        <div class="reality-card">
+          <h4 class="reality-card__title">Lost in Competition?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            10M+ sellers &amp; 350M+ product how do you stand out?
+          </p>
+        </div>
+        <div class="reality-card">
+          <h4 class="reality-card__title">Burning Cash on Ads?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            PPC feels like a money pit with no returns.
+          </p>
+        </div>
+        <div class="reality-card">
+          <h4 class="reality-card__title">Low Rankings?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            Amazon's complex algorithms keep changing.
+          </p>
+        </div>
+        <div class="reality-card">
+          <h4 class="reality-card__title">Inventory Headaches?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            Stockouts, overstocking, at the wrong time?
+          </p>
+        </div>
+        <div class="reality-card">
+          <h4 class="reality-card__title">Risk of Account Suspension?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            Amazon's strict policies make selling stressful.
+          </p>
+        </div>
+        <div class="reality-card">
+          <h4 class="reality-card__title">Wasting Time &amp; Getting Stuck?</h4>
+          <div class="reality-card__divider"></div>
+          <p class="reality-card__body">
+            Managing it all alone is overwhelming
+          </p>
+        </div>
+      </div>
+
+      <div class="reality__cta">
+        <a href="#" class="btn btn--reality">Talk to an Expert</a>
+      </div>
+    </section>
+
+    <!-- HOW WE HELP SECTION -->
+    <section class="howwe">
+      <div class="howwe__header">
+        <div class="howwe__badge">
+          <span class="badge__icon">
+            <img  class="badge__icon_image" src="./assets/image 6.png"  alt=""  />
+          </span>
+          <span class="howwe__badge-text"  >Growth <strong>Business</strong></span >
+        </div>
+        <h2 class="howwe__headline">
+          How We Help You<br />Win on
+          <span class="howwe__highlight">Amazon</span>
+        </h2>
+        <p class="howwe__sub">
+          At FINTRIXX, we don't guess&mdash;we use data-driven<br />strategies
+          to scale your business.
+        </p>
+      </div>
+
+      <div class="howwe__grid">
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Make You Stand Out</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">
+            Targeted marketing to reach the right buyers.
+          </p>
+        </div>
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Fix Your Rankings</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">
+            SEO, keywords &amp; ads for visibility.
+          </p>
+        </div>
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Optimize Your Ads</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">
+            No wasted budget&mdash;only high ROI advertising.
+          </p>
+        </div>
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Manage Your Inventory</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">
+            So you never run out of stock or overstock.
+          </p>
+        </div>
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Keep Your Account Safe</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">
+            Avoid suspensions, policy violations &amp; account risks.
+          </p>
+        </div>
+        <div class="howwe-card">
+          <h4 class="howwe-card__title">We Scale Your Business</h4>
+          <div class="howwe-card__divider"></div>
+          <p class="howwe-card__body">Expansion, market entry &amp; growth.</p>
+        </div>
+      </div>
+
+      <div class="howwe__cta">
+        <a href="#" class="btn btn--howwe">Talk to an Expert</a>
+      </div>
+    </section>
+    <script src="service.js"></script>
+  </body>
 </html>
